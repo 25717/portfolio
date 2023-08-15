@@ -116,6 +116,19 @@ header{
     font-weight: 400;
     margin: 0.7rem 0 1rem;
 }
+.social{
+    display: flex;
+    flex-direction: column;
+}
+.social a{
+    margin-bottom: 1 rem;
+    font-size: 22px;
+    color: var(--text-color);
+}
+.social a:hover{
+    color: var(--hover);
+}
+
 .btn{
     display: incline-block;
     background: var(--main-color);
