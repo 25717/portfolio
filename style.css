@@ -33,6 +33,17 @@ body {
     background: var(--main-color);
     color: var(--bg-color);
 }
+.heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.heading h2{
+    font-size: 2rem;
+}
+.heading span{
+    font-size: var(--p-font);
+    color: rgb(73, 67, 67);
+}
 
 header{
     position:fixed;
@@ -93,6 +104,7 @@ header{
     min-height: 100vh;
     display: grid;
     grid-template-columns: 0.2fr 1fr 1fr;
+    align-items: center;
     gap: 1rem;
 }
 .home-img{
@@ -119,6 +131,7 @@ header{
 .social{
     display: flex;
     flex-direction: column;
+    gap: 40px;
 }
 .social a{
     margin-bottom: 1 rem;
@@ -140,3 +153,47 @@ header{
 .btn:hover{
     background: var(--hover);
 }
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.about-container{
+    display:flex;
+   /* grid-template-columns: repeat(2. 1fr);
+    gap: 1rem;
+    margin-top: 2rem;*/
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.about-container .about-img img {
+    max-width:100%;
+    padding-left: 50px;
+   
+}
+.about-text {
+    font-size: var(--p-font);
+    font-weight: 400;
+    padding-left: 20px;
+    flex: 1;
+}
+.information{
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+}
+.information .info-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.4rem;
+}
+.information .info-box span{
+    font-weight:400;
+    margin-left: 1rem;
+}
+
