@@ -73,9 +73,12 @@ header{
 
 .navbar{
     display: flex;
+    flex-flow: row wrap;
+    justify-content: stretch;
 }
 
 .navbar a{
+    display: inline-block;
     font-size: 1.1rem;
     padding: 10px 20px;
     color: var(--text-color);
@@ -111,6 +114,7 @@ header{
    order: 3; 
 }.home-img img{
     width: 100%;
+    max-width: 100%;
 }
 .home-text span{
     font-size: var(--medium-font);
@@ -153,6 +157,35 @@ header{
 .btn:hover{
     background: var(--hover);
 }
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+    .home {
+        grid-template-columns: 0.2fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 767px) {
+    .home-text h1 {
+        font-size: 2rem;
+    }
+
+    .home-text h2 {
+        font-size: 0.8rem;
+    }
+
+    .social a {
+        font-size: 16px;
+    }
+
+    .btn {
+        padding: 0.5rem 1rem;
+    }
+}
+
+
+
+
 .about{
     display: flex;
     flex-direction: column;
