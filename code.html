@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Skills</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        
+        .skill-section {
+            background-color: #fff;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-align: center;
+        }
+
+        .skill-section:hover {
+            background-color: #f0f0f0;
+        }
+
+        .skill-section.active {
+            background-color: #f0f0f0;
+        }
+
+        .icon {
+            display: inline-block;
+            margin-right: 5px;
+        }
+
+        .skills-list {
+            display: none;
+            margin: 20px;
+        }
+
+        .skills-list ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skills-list ul li {
+            margin-bottom: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="skill-section">
+        <span class="icon">+</span> Section 1
+        <div class="skills-list">
+            <ul>
+                <li>Skill 1 <span class="skill-level">Intermediate</span></li>
+                <li>Skill 2 <span class="skill-level">Advanced</span></li>
+                <li>Skill 3 <span class="skill-level">Expert</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="skill-section">
+        <span class="icon">+</span> Section 2
+        <div class="skills-list">
+            <ul>
+                <li>Skill 4 <span class="skill-level">Intermediate</span></li>
+                <li>Skill 5 <span class="skill-level">Advanced</span></li>
+                <li>Skill 6 <span class="skill-level">Expert</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Add more skill sections as needed -->
+
+    <script>
+        const skillSections = document.querySelectorAll('.skill-section');
+
+        skillSections.forEach(section => {
+            section.addEventListener('click', () => {
+                section.classList.toggle('active');
+                const icon = section.querySelector('.icon');
+                icon.textContent = section.classList.contains('active') ? '-' : '+';
+
+                const skillsList = section.querySelector('.skills-list');
+                if (skillsList.style.display === 'block') {
+                    skillsList.style.display = 'none';
+                } else {
+                    skillsList.style.display = 'block';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
