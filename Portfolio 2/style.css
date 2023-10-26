@@ -553,3 +553,15 @@ ul{
     text-align: center;
     transition: all 0.5s ease;
 }
+
+
+/******FOOTER SECTION*******/
+
+footer{
+    height: 26vh;
+    margin: 0 1rem;
+}
+
+footer p{
+    text-align: center;
+}
