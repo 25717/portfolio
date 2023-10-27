@@ -14,8 +14,31 @@ body{
 }
 
 html{
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; 
 }
+
+/*******Scrollllll**********/
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #000000;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #939393;
+  }
+
+
 p{
     color: rgb(85,85,85);
 }
@@ -163,7 +186,7 @@ section{
     display: flex;
     justify-content: center;
     gap: 5rem;
-    height: 80vh;
+    height: 100vh;
     background-color: rgb(255, 255, 255);
 
 }
@@ -349,8 +372,8 @@ article .icon{
 }
 
 .color-container{
-    border-color: rgb(163, 163, 163);
-    background: rgb(221, 221, 221);
+    border-color: rgb(53, 53, 53);
+    background: rgb(253, 253, 253);
 }
 
 .project-img{
@@ -494,3 +517,4 @@ footer{
 footer p{
     text-align: center;
 }
+

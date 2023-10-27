@@ -1,4 +1,4 @@
-@media screen and (max-width:1400px){
+@media (max-width:1400px){
     #profile{
         height: 83vh;
         margin-bottom: 6rem;
@@ -7,9 +7,18 @@
     .about-containers{
         flex-wrap: wrap;
     }
+
+    #Contact{
+       margin-top: 5rem;
+       margin-bottom: -20;
+    }
+    
+
+   
+    
 }
 
-@media screen and (max-width:1200px){
+@media (max-width:1200px){
     #desktop-nav{
         display: none;
     }
@@ -111,22 +120,4 @@
     }
 }
 
-
-/*@media (max-width: 768px){
-    .container{
-        padding: 20px;
-    }
-
-    .footer-col{
-        width: 25%;
-        padding: 0 15px;
-        margin-bottom: 30px;
-    }
-}
-
-@media (max-width: 574px){
-    .footer-col{
-        width: 100%;
-    }
-}*/
 
