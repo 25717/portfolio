@@ -5,5 +5,9 @@ function toggleMenu(){
     icon.classList.toggle('open');
 }
 
-/******CUSTOM CURSOR***** */
+var maintitle = document.getElementById("main-title");
 
+// Add the floating effect
+maintitle.classList.add("main-title");
+
+/******CUSTOM CURSOR***** */

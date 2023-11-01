@@ -10,7 +10,7 @@
 body{
     font-family: 'Poppins', sans-serif;
     /*background-color: bisque;*/
-    /*background-color: rgb(245, 248, 67);*/
+    background-color:#f7e7ce;
 }
 
 html{
@@ -25,17 +25,17 @@ html{
   
   /* Track */
 ::-webkit-scrollbar-track {
-    background: #ffffff;
+    background: #f7e7ce;
   }
   
   /* Handle */
-  ::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     background: #000000;
   }
   
   /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #939393;
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(53, 53, 53);
   }
 
 
@@ -169,10 +169,11 @@ a:hover{
 
 section{
    padding-top:4vh;
-   height: 80vh;
+   height: 100vh;
    margin: 0 10rem;
    box-sizing: border-box;
    min-height: fit-content;
+   
   
 }
 
@@ -180,14 +181,17 @@ section{
     display:flex;
 }
 
+
+
+
 /*PROFILE SECTION***/
 
 #profile{
     display: flex;
     justify-content: center;
-    gap: 5rem;
     height: 100vh;
-    background-color: rgb(255, 255, 255);
+    background-color: f7e7ce;
+    
 
 }
 
@@ -209,11 +213,46 @@ section{
 
 .section__text__p1{
     text-align: center;
+    
 }
+
+
 .section__text__p2{
     font-size: 1.75rem;
     margin-bottom: 1rem;
 }
+
+.sub-title{
+    font-size: 3rem;
+    text-align: center;
+}
+
+.main-title{
+    position:relative;
+    font-size: 10rem;
+    text-align: center;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float{
+    0%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(-8px);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+
 .title{
     font-size: 3rem;
     text-align: center;
@@ -225,12 +264,16 @@ section{
     gap: 1rem;
 }
 
+
+
 /******ICONSSS******/
 
 .icon{
     cursor: pointer;
     height: 2rem;
 }
+
+
 
 /****BUTTONS*****/
 
@@ -397,9 +440,11 @@ article .icon{
     position: relative;
 }
 .certs{
-    background:linear-gradient(45deg, white, white);
+    background-color: f7e7ce;
+    /*background:linear-gradient(45deg, white, white);*/
     padding: 15px 9%;
     padding-bottom: 50px;
+ 
     
 }
 
@@ -451,6 +496,7 @@ article .icon{
 }
 .certs .box-container .box .btn:hover{
     letter-spacing: 2px;
+    background-color: #000000;
     
 }
 

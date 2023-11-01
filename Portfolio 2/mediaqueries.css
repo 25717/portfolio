@@ -1,4 +1,4 @@
-@media (max-width:1400px){
+@media (max-width:3000px){
     #profile{
         height: 83vh;
         margin-bottom: 6rem;
@@ -8,17 +8,25 @@
         flex-wrap: wrap;
     }
 
-    #Contact{
-       margin-top: 5rem;
-       margin-bottom: -20;
+    #contact{
+       margin-bottom: 0px;
     }
-    
+
+    section, .section-container{
+        height: fit-content;
+    }
+
+   
 
    
     
 }
 
 @media (max-width:1200px){
+    .main-title{
+        font-size: 5rem;
+        text-align: center;
+    }
     #desktop-nav{
         display: none;
     }
