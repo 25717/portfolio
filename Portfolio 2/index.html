@@ -8,15 +8,16 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <body>
-    <nav id="desktop-nav">
+    <nav id="desktop-nav" class = "reveal-section">
         <div class="logo">Sanu Koralage</div>
         <div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#TimeLine">Timeline</a></li>
+                <li><a href="#Certificates">Certificates</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -32,18 +33,23 @@
             <div class="menu-links">
                 <li><a href="#about" onclick="toggleMenu()">About</a></li>
                 <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#certificates" onclick="toggleMenu()">Certificates</a></li>
+                <li><a href="#TimeLine" onclick="toggleMenu()">Timeline</a></li>
+                <li><a href="#Certificates" onclick="toggleMenu()">Certificates</a></li>
                 <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
             </div>
         </div>
 
     </nav>
-    <section id="profile">
+    <section id="profile" class = "reveal-section">
         
         <div class="section__text">
-            <p class="sub-title"> <i>Hello  I'm</i> </p>
-            <div id="main-title" class="main-title">SANU KORALAGE</div>
+            <div>
+                <img src="" alt="">
+            </div>
+            <p class="sub-title"> <i>Hello,  I'm</i> </p>
+            <div class="parallax-container" id="parallax-container">
+                <h1 id="main-title">SANU KORALAGE</h1>
+            </div>
             <p class="section__text__p2">Frontend Developer</p>
             <div class="btn-container">
                 <button class="btn btn-color-2" 
@@ -62,9 +68,11 @@
             
         </div>
     </section>
+<div class="floating-image">
+    <img src="./images/arrow.svg" alt="floating arrow">
+</div>
 
-
-    <section id="about">
+    <section id="about" class = "reveal">
         <p class="section__text__p1"> Get to know More</p>
         <h1 class="title">ABOUT ME</h1>
         <div class="section-container">
@@ -72,26 +80,17 @@
                 <img src="./images/400.png" alt="profile picture" class="about-pic">
             </div>
             <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img src="" alt="" class="icon">
-                        <h3> Experience</h3>
-                        <p>2+ years <br> Frontend Development</p>
-                    </div>
-                    <div class="details-container">
-                        <img src="" alt="" class="icon">
-                        <h3> Education</h3>
-                        <p>BSc (Hons) Computer Science (Software Engineering) Degree<br> <strong>University of Wolverhampton</strong> </p>
-                    </div>
+                <div class="text-container-1">
+                    <p> I'm Sanu, a Software Engineering Graduate in Birmingham, UK.</p>
                 </div>
                 <div class="text-container">
-                    <p>Hello, My name is Sanuja Koralage Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis perspiciatis non iure. Deserunt, distinctio dicta, corporis, 
+                     Ciao! I'm <b>Sanuja Dulhan Koralage</b>, an <b>Italian Sri Lankan </b>based in <b>Birmingham</b>. A recent graduate from the <b>University of Wolverhampton</b> with a <b>Second Upper Class</b>, I bring over <b>three years</b> of experience in front-end development. Eager to elevate my work experience, I'm on a mission to apply and enhance the skills acquired during my academic journey. My focus lies in <b>web development, app development, cloud development,</b> and the exciting world of <b>blockchain.</b> With a keen eye for detail and a passion for staying at the forefront of technology, I am driven to create seamless digital experiences. Let's connect and explore how my expertise can contribute to your next project.
                 </div>
             </div>
         </div>
        
     </section>
-    <section id="experience">
+    <section id="experience" class = "reveal">
         <div class="exp">
         <p class="section__text__p1">Explore My</p>
         <h1 class="title">EXPERIENCES</h1>
@@ -320,7 +319,71 @@
         </div>
        
     </section>-->
-   <section id="Certificates">
+ 
+    <section id = "TimeLine" class = "reveal">
+     <div class = "container">
+        <p class="section__text__p1">Go through my</p>
+        <h1 class="title">TIMELINE</h1>
+        <div class="title-container">
+            <div class = "timeline">
+                <ul>
+                    <li>
+                        <div class="timeline-content">
+                            <h2 class="date">Ordinary Level</h2>
+                            <h1>2017</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus doloremque sunt autem laborum? Suscipit amet praesentium ab numquam voluptate, adipisci in, explicabo corrupti magnam quasi eaque quo animi excepturi laboriosam? </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-content">
+                            <h2 class="date">20th may, 2010</h2>
+                            <h1>2018</h1>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At ipsum ex maxime illo aliquam similique vel doloremque veritatis iusto obcaecati eum est ad, dignissimos, saepe consectetur vero excepturi fugiat quia.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-content">
+                            <h2 class="date">Work Experience at EKO UK - Brighton</h2>
+                            <h1>2019</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis vero laborum iure accusamus unde nulla rerum hic aperiam. Unde, ad quod provident quam ipsum sint suscipit non consequatur fugiat expedita!</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-content">
+                            <h2 class="date">20th may, 2010</h2>
+                            <h1>2020</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel pariatur voluptas vero doloribus saepe ex. Dicta asperiores minus illo accusamus voluptatibus debitis, pariatur delectus obcaecati magnam minima commodi ipsum repellat?</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-content">
+                            <h2 class="date">20th may, 2010</h2>
+                            <h1>2021</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis vero laborum iure accusamus unde nulla rerum hic aperiam. Unde, ad quod provident quam ipsum sint suscipit non consequatur fugiat expedita!</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-content">
+                            <h2 class="date">20th may, 2010</h2>
+                            <h1>2022</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel pariatur voluptas vero doloribus saepe ex. Dicta asperiores minus illo accusamus voluptatibus debitis, pariatur delectus obcaecati magnam minima commodi ipsum repellat?</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-content">
+                            <h2 class="date">Graduation</h2>
+                            <h1>2023</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel pariatur voluptas vero doloribus saepe ex. Dicta asperiores minus illo accusamus voluptatibus debitis, pariatur delectus obcaecati magnam minima commodi ipsum repellat?</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+         </div>
+    </div>
+
+    </section>
+    
+    <section id="Certificates" class = "reveal">
         <div class="certs">
         <p class="section__text__p1">Browse My Recent</p>
         <h1 class="title">CERTIFICATES</h1>
@@ -400,8 +463,8 @@
                 <ul class="nav-links">
                     <li><a href="#about">About</a></li>
                     <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#certificates">Certificates</a></li>
+                    <li><a href="#TimeLine">Timeline</a></li>
+                    <li><a href="#Certificates">Certificates</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>

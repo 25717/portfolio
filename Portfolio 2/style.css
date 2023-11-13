@@ -11,6 +11,7 @@ body{
     font-family: 'Poppins', sans-serif;
     /*background-color: bisque;*/
     background-color:#f7e7ce;
+    cursor: url('./images/dot.svg'), auto;
 }
 
 html{
@@ -168,11 +169,11 @@ a:hover{
 /*SECTIONS*/
 
 section{
-   padding-top:4vh;
+   padding-top:0vh;
    height: 100vh;
    margin: 0 10rem;
    box-sizing: border-box;
-   min-height: fit-content;
+   min-height: 100vh  ;
    
   
 }
@@ -181,7 +182,27 @@ section{
     display:flex;
 }
 
+/* Initially hide elements */
+.reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s, transform 0.8s;
+ }
 
+ /* Make elements visible when the 'visible' class is added */
+ .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+ }
+
+ .reveal-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+
+  
+ 
 
 
 /*PROFILE SECTION***/
@@ -191,7 +212,7 @@ section{
     justify-content: center;
     height: 100vh;
     background-color: f7e7ce;
-    
+    overflow: visible;
 
 }
 
@@ -220,6 +241,7 @@ section{
 .section__text__p2{
     font-size: 1.75rem;
     margin-bottom: 1rem;
+    overflow: hidden;
 }
 
 .sub-title{
@@ -231,6 +253,9 @@ section{
     position:relative;
     font-size: 10rem;
     text-align: center;
+    white-space: nowrap; 
+    overflow: visible;
+    transform: scale(1);
     animation: float 3s ease-in-out infinite;
 }
 
@@ -250,13 +275,23 @@ section{
 
 
 
-
-
-
 .title{
     font-size: 3rem;
     text-align: center;
+    animation: floatUpDown 3s infinite alternate ease-in-out;
 }
+
+  
+  @keyframes floatUpDown {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
+  }
+
+
 #socials-container{
     display: flex;
     justify-content: center;
@@ -271,6 +306,7 @@ section{
 .icon{
     cursor: pointer;
     height: 2rem;
+    
 }
 
 
@@ -281,6 +317,7 @@ section{
     display: flex;
     justify-content: center;
     gap: 1rem;
+   
 }
 .btn{
     font-weight: 600;
@@ -320,11 +357,37 @@ section{
     gap: 1rem;
 }
 
+
+/******Floating Arrow********/
+.floating-image {
+    position: absolute; /* Use absolute positioning for the image */
+    top: 120%; /* Adjust the top position */
+    left: 50%; /* Adjust the left position */
+    transform: translate(-50%, -50%); 
+  }
+
+.floating-image img{
+    
+ max-width: 100px;
+ height: auto;
+ /*display: block;*/
+ margin: 0 auto;
+ animation: float 1s ease-in-out infinite;
+}
 /***ABOUT SECTION****/
 
 #about{
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    /* Initially hide the about me section */
+    transition: opacity 0.5s ease; /* Add transition effect */
 }
+
 
 .about-containers{
     gap: 2rem;
@@ -339,7 +402,7 @@ section{
     display: flex;
 }
 .about-pic{
-    border-radius: 2rem;
+    border-radius: 0rem;
 }
 
 .arrow{
@@ -368,6 +431,15 @@ section{
     margin: auto;
 }
 
+.text-container-1{
+    font-weight:600;
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.text-container{
+    text-align: justify;
+}
 /*******EXPERIENCE SECTION******/
 
 #experience{
@@ -375,7 +447,7 @@ section{
 }
 
 .experience-sub-title{
-    color: rgb(85, 85, 85);
+    color: rgb(61, 61, 61);
     font-weight:600;
     font-size: 1.75rem;
     margin-bottom: 2rem;
@@ -404,7 +476,7 @@ article{
 
 article .icon{
     cursor: default;
-    opacity: 0.3;
+  
     
 }
 
@@ -434,6 +506,66 @@ article .icon{
     color: black;
     border-color: rgb(163, 163, 163);
 }
+
+
+/***************TIMELINE****************************/
+
+.title-container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0px;
+    background-color: #f7e7ce;
+}
+.timeline{
+   width: 80%;
+   height: auto;
+   max-width: 800px;
+   margin: 0 auto;
+   position: relative; 
+}
+
+.timeline ul{
+    list-style: none;
+}
+
+.timeline ul li{
+    padding: 20px;
+    background-color: #fff;
+    color: black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.timeline ul li:last-child{
+    margin-bottom: 0;
+}
+
+.timeline-content h1{
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.timeline-content p{
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 300;
+}
+
+
+.timeline-content .date{
+    font-size: 13px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+
+
 
 /********CERTIFICATION SECTION********/
 #Certificates{
@@ -558,6 +690,7 @@ footer{
     height: 26vh;
     margin: 0 1rem;
     border-top: 1px solid black;
+ 
 }
 
 footer p{
