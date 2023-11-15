@@ -5,6 +5,7 @@
 *{
     margin: 0;
     padding: 0;
+    cursor: default;
 }
 
 body{
@@ -203,6 +204,35 @@ section{
 
   
  
+.cursor, .hand{
+    position: fixed;
+    left: 0;
+    border-radius: 50%;
+    pointer-events: none;
+    transition: transform .1s;
+}
+
+.cursor{
+    background: black;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    z-index: 999;
+}
+
+.hand{
+    max-width: 0;
+    top: 50%;
+    width: 75px;
+    height: 75px;
+    z-index: 9999;
+    display: grid;
+    place-content: center;
+    transform: rotate(45deg);
+    opacity: 0;
+}
+
+
 
 
 /*PROFILE SECTION***/
@@ -255,6 +285,8 @@ section{
     text-align: center;
     white-space: nowrap; 
     overflow: visible;
+    cursor: default;
+   
     transform: scale(1);
     animation: float 3s ease-in-out infinite;
 }
@@ -405,11 +437,6 @@ section{
     border-radius: 0rem;
 }
 
-.arrow{
-    position: absolute;
-    right: 5rem;
-    bottom: 2.5rem;
-}
 
 .details-container{
     padding: 1.5rem;
@@ -426,8 +453,8 @@ section{
     height: 80%;
 }
 .section__pic-container{
-    height: 400px;
-    width: 400px;
+    height: 500px;
+    width: 500px;
     margin: auto;
 }
 
@@ -439,6 +466,7 @@ section{
 
 .text-container{
     text-align: justify;
+    line-height: 2;
 }
 /*******EXPERIENCE SECTION******/
 
@@ -544,16 +572,17 @@ article .icon{
 }
 
 .timeline-content h1{
-    font-size: 25px;
+    font-size: 40px;
     font-weight: 500;
     line-height: 30px;
     margin-bottom: 10px;
 }
 
 .timeline-content p{
-    font-size: 16px;
+    font-size: 15px;
     line-height: 30px;
     font-weight: 300;
+    
 }
 
 
@@ -680,7 +709,29 @@ article .icon{
 
 
 
-/*********Footer***********/
+/*********Upwards Arrow***********/
+
+.arrow{
+    position: relative;
+    height: 200px;
+}
+
+.floating-arrow {
+    position: absolute; /* Use absolute positioning for the image */
+    bottom: 50%; /* Adjust the top position */
+    left: 50%; /* Adjust the left position */
+    transform: translate(-50%, -50%); 
+  }
+
+.floating-arrow img{
+    
+ max-width: 100px;
+ height: auto;
+ /*display: block;*/
+ margin: 0 auto;
+ animation: float 1s ease-in-out infinite;
+}
+
 
 
 

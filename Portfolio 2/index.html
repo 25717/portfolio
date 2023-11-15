@@ -7,6 +7,9 @@
     <link rel="icon" href="./images/Sanulogo.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
 </head>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <body>
@@ -40,12 +43,15 @@
         </div>
 
     </nav>
+    <div class="cursor"></div>
     <section id="profile" class = "reveal-section">
         
         <div class="section__text">
-            <div>
-                <img src="" alt="">
+            
+            <div class="hand">
+                <img src="images/circleimg3.png" alt="">
             </div>
+
             <p class="sub-title"> <i>Hello,  I'm</i> </p>
             <div class="parallax-container" id="parallax-container">
                 <h1 id="main-title">SANU KORALAGE</h1>
@@ -53,7 +59,7 @@
             <p class="section__text__p2">Frontend Developer</p>
             <div class="btn-container">
                 <button class="btn btn-color-2" 
-                onclick="window.open('./portfolio 2/CV_Sanuja_Koralage.pdf')">Download CV</button>
+                onclick="window.open('koralage_sanuja(updated)_CV.pdf')">Download CV</button>
                 <button class="btn btn-color-1"
                 onclick="location.href='./#contact'">Contact Me</button>
             </div>
@@ -77,14 +83,14 @@
         <h1 class="title">ABOUT ME</h1>
         <div class="section-container">
             <div class="section__pic-container">
-                <img src="./images/400.png" alt="profile picture" class="about-pic">
+                <img src="./images/uni.jpg" alt="profile picture" class="about-pic">
             </div>
             <div class="about-details-container">
                 <div class="text-container-1">
                     <p> I'm Sanu, a Software Engineering Graduate in Birmingham, UK.</p>
                 </div>
                 <div class="text-container">
-                     Ciao! I'm <b>Sanuja Dulhan Koralage</b>, an <b>Italian Sri Lankan </b>based in <b>Birmingham</b>. A recent graduate from the <b>University of Wolverhampton</b> with a <b>Second Upper Class</b>, I bring over <b>three years</b> of experience in front-end development. Eager to elevate my work experience, I'm on a mission to apply and enhance the skills acquired during my academic journey. My focus lies in <b>web development, app development, cloud development,</b> and the exciting world of <b>blockchain.</b> With a keen eye for detail and a passion for staying at the forefront of technology, I am driven to create seamless digital experiences. Let's connect and explore how my expertise can contribute to your next project.
+                     Ciao! I'm <b>Sanuja Dulhan Koralage</b>, an <b>Italian Sri Lankan </b>based in <b>Birmingham</b>. A recent graduate from the <b>University of Wolverhampton</b> with a <b>Second Upper Class</b> in<b> Software Engineering</b> and   I bring over <b>three years</b> of experience in front-end development. Eager to elevate my work experience, I'm on a mission to apply and enhance the skills acquired during my academic journey. My focus lies in <b>web development, app development, cloud development,</b> and the exciting world of <b>blockchain.</b> With a keen eye for detail and a passion for staying at the forefront of technology, I am driven to create seamless digital experiences. Let's connect and explore how my expertise can contribute to your next project.
                 </div>
             </div>
         </div>
@@ -169,6 +175,13 @@
                                 <p>Intermediate</p>
                             </div>
                         </article>
+                        <article>
+                            <img src="./images/dot.png " alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>GSAP</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
                        
                        
                     </div>
@@ -243,6 +256,13 @@
                             <img src="./images/dot.png " alt="Experience Icon" class="icon">
                             <div>
                                 <h3>Android Studio</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./images/dot.png " alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>Figma</h3>
                                 <p>Intermediate</p>
                             </div>
                         </article>
@@ -330,50 +350,57 @@
                     <li>
                         <div class="timeline-content">
                             <h2 class="date">Ordinary Level</h2>
-                            <h1>2017</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus doloremque sunt autem laborum? Suscipit amet praesentium ab numquam voluptate, adipisci in, explicabo corrupti magnam quasi eaque quo animi excepturi laboriosam? </p>
+                            <h1>2016</h1>
+                            <p>My initiation into computer science began with the decision to pursue it at the ordinary level. Early exposure to hardware and software basics ignited my passion for crafting algorithms, data management, programming, and web development. This journey laid the foundation for my deep commitment to the field, fostering a profound interest in the dynamic realm of computer science.</p>
                         </div>
                     </li>
                     <li>
                         <div class="timeline-content">
-                            <h2 class="date">20th may, 2010</h2>
+                            <h2 class="date">Results</h2>
+                            <h1>2017</h1>
+                            <p>Achieving A* grades in Computer Science and Mathematics during my GCSE ignited a passion for these subjects, compelling me to pursue further studies. This academic success not only reflects my dedication but also underscores my commitment to excellence in the realms of computer science and mathematics.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-content">
+                            <h2 class="date">Steyning Grammar School</h2>
                             <h1>2018</h1>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At ipsum ex maxime illo aliquam similique vel doloremque veritatis iusto obcaecati eum est ad, dignissimos, saepe consectetur vero excepturi fugiat quia.</p>
+                            <p>In a pivotal chapter of my academic journey, I selected Steyning Grammar School in the United Kingdom to elevate my expertise in computer science. Despite the initial challenges of adapting to a new environment, I navigated the complexities with resilience and witnessed significant personal and intellectual growth throughout the year.</p>
                         </div>
                     </li>
                     <li>
                         <div class="timeline-content">
                             <h2 class="date">Work Experience at EKO UK - Brighton</h2>
                             <h1>2019</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis vero laborum iure accusamus unde nulla rerum hic aperiam. Unde, ad quod provident quam ipsum sint suscipit non consequatur fugiat expedita!</p>
+                            <p>This year, I had the invaluable opportunity to gain practical work experience aligned with my passion. EKO UK Pvt Limited, a prominent software development agency in Brighton, United Kingdom, provided me with a hands-on exploration of web development and team management in a real-world context. This experience has been instrumental in furthering my understanding and skills in the field.</p>
                         </div>
                     </li>
                     <li>
                         <div class="timeline-content">
-                            <h2 class="date">20th may, 2010</h2>
+                            <h2 class="date">A University student</h2>
                             <h1>2020</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel pariatur voluptas vero doloribus saepe ex. Dicta asperiores minus illo accusamus voluptatibus debitis, pariatur delectus obcaecati magnam minima commodi ipsum repellat?</p>
+                            <p>Embarking on a pivotal academic journey, I transitioned to the University of Wolverhampton in West Midlands for my Bachelor's in Computer Science, with a specialization in Software Engineering. The comprehensive curriculum encompassed modules in mobile development, cloud computing, web development, AI training and testing, and data management. This marked a significant milestone following the completion of my advanced levels, defining my commitment to a future in cutting-edge technology.</p>
                         </div>
                     </li>
                     <li>
                         <div class="timeline-content">
-                            <h2 class="date">20th may, 2010</h2>
+                            <h2 class="date">Collaboration</h2>
                             <h1>2021</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis vero laborum iure accusamus unde nulla rerum hic aperiam. Unde, ad quod provident quam ipsum sint suscipit non consequatur fugiat expedita!</p>
+                            <p>Starting on the academic journey as a Computer Science student has been a dynamic blend of challenge and fulfillment. Days brimmed with enriching lectures, collaborative coding sessions, and the exploration of cutting-edge technologies. These experiences not only honed my skills but also forged invaluable connections with remarkable peers, transforming my university years memorable.</p>
                         </div>
                     </li>
                     <li>
                         <div class="timeline-content">
-                            <h2 class="date">20th may, 2010</h2>
+                            <h2 class="date">Challengers</h2>
                             <h1>2022</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel pariatur voluptas vero doloribus saepe ex. Dicta asperiores minus illo accusamus voluptatibus debitis, pariatur delectus obcaecati magnam minima commodi ipsum repellat?</p>
+                            <p>This year, I faced and conquered advanced challenges in modules like Advanced Web Development, Secure Mobile Development, and Cloud Computing. Embracing curiosity, I joined the University's Mainframe Society, undertaking the IBM Z xplore badge. Exploring the uncharted territories of mainframe technology added a unique layer to my learning journey, contributing to a year marked by growth, curiosity, and overcoming complexities.</p>
                         </div>
                     </li>
                     <li>
                         <div class="timeline-content">
-                            <h2 class="date">Graduation</h2>
+                            <h2 class="date">A Graduate</h2>
                             <h1>2023</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel pariatur voluptas vero doloribus saepe ex. Dicta asperiores minus illo accusamus voluptatibus debitis, pariatur delectus obcaecati magnam minima commodi ipsum repellat?</p>
+                            <p>Having traversed a challenging yet exhilarating 3-year journey, I successfully concluded my studies in Computer Science, specializing in Software Engineering, achieving a Second Upper Class. This journey, marked by both difficulty and fulfillment, has fortified my skills and passion for the dynamic realm of technology.</p>
                         </div>
                     </li>
                 </ul>
@@ -455,7 +482,11 @@
             </div>
         </div>
     </section>
-
+   <div class="arrow">
+    <div class="floating-arrow" id="scrollToTop">
+        <img src="./images/arrow-up.svg" alt="floating arrow">
+    </div>
+   </div>
 
     <footer>
         <nav>
