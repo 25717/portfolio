@@ -138,3 +138,59 @@ $(document).ready(function() {
           rotate: 45,
       })
   })
+
+
+  /******************************** */
+
+  const words = ["Sanu", "சானு", "शानू", "සනු", "サヌ", "萨努", "سانو", "Сану", "사누"];
+    let displayedWords = 0;
+
+    function getRandomPosition() {
+      const x = Math.random() * window.innerWidth;
+      const y = Math.random() * window.innerHeight;
+      return { x, y };
+    }
+
+    function createWordElement(word) {
+      const wordElement = document.createElement("div");
+      wordElement.className = "word";
+      wordElement.textContent = word;
+      document.getElementById("background-section").appendChild(wordElement);
+
+      // Triggering reflow to apply the initial opacity setting
+      wordElement.offsetHeight;
+
+      wordElement.style.opacity = 1; // Set opacity to 1 for smooth appearance
+      return wordElement;
+    }
+
+    function animateWords() {
+      if (displayedWords < 10) {
+        const word = words[Math.floor(Math.random() * words.length)];
+        const wordElement = createWordElement(word);
+        const position = getRandomPosition();
+        wordElement.style.left = `${position.x}px`;
+        wordElement.style.top = `${position.y}px`;
+
+        setTimeout(() => {
+          wordElement.style.opacity = 0;
+        }, 2000);
+
+        setTimeout(() => {
+          document.getElementById("background-section").removeChild(wordElement);
+          displayedWords--;
+          animateWords();
+        }, 3000);
+
+        displayedWords++;
+      }
+    }
+
+    function startAnimation() {
+      animateWords();
+      setTimeout(() => {
+        startAnimation();
+      }, 4000);
+    }
+
+    startAnimation();

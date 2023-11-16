@@ -13,7 +13,30 @@ body{
     /*background-color: bisque;*/
     background-color:#f7e7ce;
     cursor: url('./images/dot.svg'), auto;
+    
+ 
+   
 }
+#background-section {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+.word {
+    position: absolute;
+    font-size: 50px;
+    font-weight: 500;
+    color: #515151;
+    color: rgba(0, 0, 0, 0.249); /* Use rgba for translucency */
+    z-index: -1;
+
+   opacity: 0;
+    transition: opacity 1s ease-in-out; /* Smooth transition effect */
+  }
 
 html{
     scroll-behavior: smooth; 
@@ -83,10 +106,11 @@ a:hover{
 
 .logo{
     font-size: 2.2rem;
-    
+    font-weight: 500;
 }
 .logo:hover{
     cursor:default;
+    
 }
 
 /*HAMBURGER MENU*/
@@ -172,7 +196,7 @@ a:hover{
 section{
    padding-top:0vh;
    height: 100vh;
-   margin: 0 10rem;
+   margin: 0 1rem;
    box-sizing: border-box;
    min-height: 100vh  ;
    
@@ -246,6 +270,7 @@ section{
 
 }
 
+
 .section__pic-container{
     display: flex;
     height: 400px;
@@ -281,10 +306,10 @@ section{
 
 .main-title{
     position:relative;
-    font-size: 10rem;
+    font-size: 9rem;
     text-align: center;
     white-space: nowrap; 
-    overflow: visible;
+    overflow: hidden;
     cursor: default;
    
     transform: scale(1);
@@ -415,6 +440,7 @@ section{
     align-items: center;
     justify-content: center;
     height: 100vh;
+    margin: 0 10rem;
     text-align: center;
     /* Initially hide the about me section */
     transition: opacity 0.5s ease; /* Add transition effect */
@@ -470,8 +496,11 @@ section{
 }
 /*******EXPERIENCE SECTION******/
 
+/*
+
 #experience{
     position: relative;
+    margin: 0 8rem;
 }
 
 .experience-sub-title{
@@ -507,6 +536,73 @@ article .icon{
   
     
 }
+
+*/
+
+/* Apply styles to the section */
+#experience {
+    background-color: #F7E7CE; /* Champagne background */
+    color: #000; /* Black text */
+    padding: 80px 0;
+    text-align: center;
+  }
+  
+  .exp {
+    max-width: 1700px;
+    margin: 0 auto;
+  }
+  .experience-details-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+  
+  /* Style the titles and subtitles */
+  .section__text__p1, .title, .experience-sub-title {
+    
+    margin-bottom: 20px;
+  }
+  
+  
+  .experience-sub-title {
+    font-size: 28px;
+  }
+  
+  /* Style the article containers */
+  .article-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* Style the individual articles */
+  article {
+    width: 180px;
+    margin: 10px;
+    padding: 15px;
+    background-color: #fff; /* White background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  /* Hover effect for the articles */
+  article:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Style the icons */
+  .icon {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+  }
+  
+  /* Align icons next to the h3 */
+  article img {
+    display: inline-block;
+    margin-right: 10px;
+  }
 
 /*****Projects****/
 
@@ -599,6 +695,7 @@ article .icon{
 /********CERTIFICATION SECTION********/
 #Certificates{
     position: relative;
+    margin: 0 10rem;
 }
 .certs{
     background-color: f7e7ce;
@@ -730,6 +827,7 @@ article .icon{
  /*display: block;*/
  margin: 0 auto;
  animation: float 1s ease-in-out infinite;
+ cursor: pointer;
 }
 
 
