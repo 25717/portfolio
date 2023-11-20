@@ -41,6 +41,7 @@ $(document).ready(function() {
                 scrollTop: $(hash).offset().top
             }, {
                 duration: 800,
+              
                 complete: function() {
                     window.location.hash = hash;
                 }
@@ -57,7 +58,6 @@ $(document).ready(function() {
 
             if (scroll > position - windowHeight + 200) {
                 //$(this).addClass("visible");
-                //var delay = 800;
                 var element = $(this);
                 
                 setTimeout(function() {
@@ -194,3 +194,15 @@ $(document).ready(function() {
     }
 
     startAnimation();
+
+
+    /**************************************/
+
+ 
+    document.addEventListener("DOMContentLoaded", function () {
+      // Simulate a delay for demonstration purposes (remove in production)
+      setTimeout(function () {
+          // Add the 'loaded' class to the body to hide the loader
+          document.body.classList.add("loaded");
+      }, 2000); // Adjust the delay time as needed
+  });

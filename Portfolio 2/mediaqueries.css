@@ -71,12 +71,28 @@
     }
 
     .timeline ul li:hover:after{
-        background-color: black;
+        background-color: rgb(0, 0, 0);
     }
 
     .timeline-content .date{
         position: absolute;
         top: -20px;
+    }
+    .timeline-content {
+        position: relative;
+        overflow: hidden; /* Ensure that the hidden image does not overflow the timeline content */
+    }
+    
+    .hidden-image {
+        position: absolute;
+        top: -100%; /* Initial position above the timeline content */
+        left: 0;
+        width: 100%;
+        transition: top 0.3s ease; /* Adjust the duration and timing function as needed */
+    }
+    
+    .timeline ul li:hover .hidden-image {
+        top: 0; /* Move the image down to reveal it */
     }
 }
 
